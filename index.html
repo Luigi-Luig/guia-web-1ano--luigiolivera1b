@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Guia Profissional de Desenvolvimento Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <h1 class="logo">Guia Profissional de Desenvolvimento Web</h1>
+      <button id="theme-toggle" aria-pressed="false" title="Alternar tema">Tema</button>
+      <button id="nav-toggle" class="nav-toggle" aria-controls="main-nav" aria-expanded="false">≡</button>
+      <nav id="main-nav" class="main-nav" role="navigation">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="tecnologias.html">Tecnologias</a></li>
+          <li><a href="boas-praticas.html">Boas Práticas</a></li>
+          <li><a href="fluxo.html">Fluxo</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="main" role="main">
+    <section class="hero">
+      <h2>Aprenda as bases do desenvolvimento web: HTML, CSS e JavaScript</h2>
+      <p class="lead">Um guia prático e acessível com boas práticas profissionais.</p>
+      <p><a class="btn" href="#o-que-e">Começar</a></p>
+    </section>
+
+    <section id="o-que-e" class="cards-section" aria-labelledby="o-que-e-title">
+      <h3 id="o-que-e-title">O que é HTML, CSS e JavaScript?</h3>
+      <div class="cards">
+        <article class="card">
+          <h4>HTML</h4>
+          <p>HTML é a linguagem de marcação que estrutura o conteúdo da página.</p>
+          <pre><code>&lt;p&gt;Olá mundo&lt;/p&gt;</code></pre>
+          <p class="when">Quando usar: sempre, para estruturar conteúdo.</p>
+        </article>
+        <article class="card">
+          <h4>CSS</h4>
+          <p>CSS define a apresentação visual dos elementos estruturados em HTML.</p>
+          <pre><code>p { color: #2563EB; }</code></pre>
+          <p class="when">Quando usar: para layout, temas e responsividade.</p>
+        </article>
+        <article class="card">
+          <h4>JavaScript</h4>
+          <p>JavaScript traz interatividade e lógica ao site no navegador.</p>
+          <pre><code>document.querySelector('p').textContent = 'Olá';</code></pre>
+          <p class="when">Quando usar: para comportamentos, validações e manipulação DOM.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <nav>
+        <a href="index.html">Início</a> · <a href="tecnologias.html">Tecnologias</a> · <a href="boas-praticas.html">Boas Práticas</a>
+      </nav>
+      <p>© <span id="year"></span> Guia Profissional de Desenvolvimento Web</p>
+    </div>
+  </footer>
+
+  <script src="/js/app.js" type="module"></script>
+</body>
+</html>
